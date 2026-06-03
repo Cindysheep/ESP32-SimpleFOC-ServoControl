@@ -102,14 +102,14 @@ void setup()
     // command.add('T', doTarget, "target angle"); // 通过串口T命令发送位置，比如T6.28,表示电机转6.28弧度,即1圈
     // command.add('V', doVelocity, "target velocity"); // 通过串口V命令发送速度，比如V10,表示电机转速10rad/s
     command.add('T', doTarget, "target angle"); // USB: T6.28
-    command.add('t', doTarget, "target angle (lower)");
+    // command.add('t', doTarget, "target angle (lower)");
     command.add('V', doVelocity, "target velocity"); // USB: V20 or v20
     command.add('v', doVelocity, "target velocity (lower)");
     command.add('q', doTorque, "target torque (lower)");
     command.add('F', doForward, "forward (optional speed)"); // F or f
-    command.add('f', doForward, "forward (lower)");
+    // command.add('f', doForward, "forward (lower)");
     command.add('B', doBackward, "backward (optional speed)"); // B or b
-    command.add('b', doBackward, "backward (lower)");
+    // command.add('b', doBackward, "backward (lower)");
 
     
     SerialBT.begin("M-CDGF");      // 蓝牙设备的名称，这个就是在手机蓝牙端看到的名称   
